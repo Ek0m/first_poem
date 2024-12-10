@@ -63,6 +63,17 @@ function App() {
         </div>
       </section>
 
+      <section className="fixed bottom-4 left-1/2 transform -translate-x-1/2 animate-scroll text-xl md:text-2xl font-semibold">
+        <motion.div
+          className="scroll-down"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, repeat: Infinity, repeatType: "reverse" }}
+        >
+          Scroll Down
+        </motion.div>
+      </section>
+
       {/* Footer */}
       <footer className="py-8 bg-gray-800 text-center">
         <p>&copy; 2024 Saintekom | All Rights Reserved</p>
